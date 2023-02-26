@@ -1,3 +1,4 @@
+//EX2
 class Conta {
   constructor(senha) {
     this.saldo = 0;
@@ -18,15 +19,7 @@ class Conta {
     this.saldo -= valor;
   }
 }
-
-class ContaPoupanca extends Conta {
-    atualizaJuros() {
-      const taxaJuros = 0.007; // taxa de juros de 0.7%
-      this.saldo += this.saldo * taxaJuros;
-    }
-  }
-
-console.log("TESTANDO CLASSE CONTA")
+console.log("TESTANDO CLASSE CONTA EX2")
 const contaCorrente = new Conta("minhasenha");
 console.log(contaCorrente.saldo); // 0
 
@@ -36,7 +29,16 @@ console.log(contaCorrente.saldo); // 100
 contaCorrente.retirada(50);
 console.log(contaCorrente.saldo); // 50
 
-console.log("TESTANDO CLASSE CONTA POUPANÇA")
+
+//EX3
+class ContaPoupanca extends Conta {
+    atualizaJuros() {
+      const taxaJuros = 0.007; // taxa de juros de 0.7%
+      this.saldo += this.saldo * taxaJuros;
+    }
+  }
+
+console.log("TESTANDO CLASSE CONTA POUPANÇA EX3")
 
 const contaPoupanca = new ContaPoupanca("minhasenha");
 console.log(contaPoupanca.saldo); // 0
