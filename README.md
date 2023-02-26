@@ -14,3 +14,7 @@ Por fim, instancie um objeto chamado contaCorrente e teste as operações.
 EX3
 
 Agora o banco quer criar uma nova classe chamada ContaPoupança. A conta poupança tem todos os métodos e atributos da classe Conta (herança). Porém, essa nova classe deve ter um novo método chamado atualizaJuros. Esse método deve pegar o valor do saldo e adicionar um ganho baseado em um índice de índice de 0.7% todas as vezes que for chamado.
+
+EX4
+
+Agora o banco inventou de criar um novo tipo de poupança, chamada poupancaPremium, que contém uma taxa de juros melhor. Crie uma classe que herde atributos e métodos da classe poupanca criada anteriormente e modifique o método atualizaJuros (polimorfismo), aumentando o a taxa para 1.2% toda a vez que o método for chamado.
