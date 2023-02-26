@@ -54,3 +54,26 @@ console.log(contaPoupanca.saldo); // 507
 
 contaPoupanca.atualizaJuros();
 console.log(contaPoupanca.saldo); // 510.049
+
+//EX4
+class PoupancaPremium extends ContaPoupanca {
+    atualizaJuros() {
+      const taxaJuros = 0.012; // taxa de juros de 1.2%
+      this.saldo += this.saldo * taxaJuros;
+    }
+  }
+console.log("TESTANDO CLASSE CONTA POUPANÇA PREMIUM EX4")
+const poupancaPremium = new PoupancaPremium("minhasenha");
+console.log(poupancaPremium.saldo); // 0
+
+poupancaPremium.deposito(1000, "minhasenha");
+console.log(poupancaPremium.saldo); // 1000
+
+poupancaPremium.atualizaJuros();
+console.log(poupancaPremium.saldo); // 1012
+
+poupancaPremium.retirada(500);
+console.log(poupancaPremium.saldo); // 512
+
+poupancaPremium.atualizaJuros();
+console.log(poupancaPremium.saldo); // 518.144
